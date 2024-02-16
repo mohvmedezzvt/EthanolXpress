@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: jost, sans-serif;
+    }
+    nav {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #name {
+      font-weight:bold;
+      font-size: 1.3rem;
+      margin-top: 18px;
+    }
+    .hero-section {
+      position: relative;
+      background-color: #000;
+      color: #fff;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('images/bg.jpg');
+        background-size: cover;
+        background-position: top center;
+
+        opacity: 0.7;
+      }
+    }
+    .hero-content {
+      position: relative;
+      max-width: 900px;
+      padding-left: 12px;
+      border-left: #fff 6px solid;
+    }
+    #ourblog {
+      font-weight: 500;
+      color: #0000008C;
+    }
+    .card {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #map {
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: 767.98px) {
+      #map {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Nav bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white" id="top">
+      <div class="container xs-ms-6 lg-mx-auto">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.jpg" alt="logo" width="77" height="77">
+        </a>
+        <span class="navbar-text me-2">
+          <p id="name">EthanolXpress</p>
+        </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="#map">Location</a>
+            <a class="nav-link me-3" href="#aboutus">About Us</a>
+            <button type="button" class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Hero section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 vh-100" style="display: flex; align-items: center;">
+          <div class="hero-content">
+            <h1 class="display-4 fw-bold">CLEAN LIFE FOR A BETTER LIFE</h1>
+            <p class="lead display-6 ms-1">USE ENVIRONMENTALLY FRIENDLY MATERIALS FOR A BETTER LIFE.</p>
+            <p class="lead ms-1">
+              <a class="btn btn-primary btn-lg px-5" href="#ourblog" role="button">Learn more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2 id="ourblog" class="text-center py-5 display-4">Our Blog</h2>
+      <div class="row">
+        <div class="col-md-4 mb-5">
+          <div class="card">
+            <div class="card-img-top bg-dark bg-opacity-10">
+              <img src="images/slide_1.jpeg" class="w-100" alt="card 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card">
+            <div class="card-img-top bg-dark bg-opacity-10">
+              <img src="images/slide_2.jpeg" class="w-100" alt="card 2">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card">
+            <div class="card-img-top bg-dark bg-opacity-10">
+              <img src="images/slide_3.jpeg" class="w-100" alt="card 3">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card">
+            <div class="card-img-top bg-dark bg-opacity-10">
+              <img src="images/slide_1.jpeg" class="w-100" alt="card 1">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card">
+            <div class="card-img-top bg-dark bg-opacity-10">
+              <img src="images/slide_2.jpeg" class="w-100" alt="card 2">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <div class="card">
+            <div class="card-img-top bg-dark bg-opacity-10">
+              <img src="images/slide_3.jpeg" class="w-100" alt="card 3">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="bg-light">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.3624471613393!2d31.27967503519594!3d30.08380441321114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f93bc92236f%3A0x4f660e081a1e2e3f!2z2KPYrdmF2K8g2KjYs9mK2YjZhtmK2Iwg2K3Yr9in2KbZgiDYp9mE2YLYqNip2Iwg2YXYrdin2YHYuNipINin2YTZgtin2YfYsdip4oCs!5e0!3m2!1sar!2seg!4v1708099318294!5m2!1sar!2seg" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="mt-4 mt-lg-0">
+            <h2 id="aboutus">About Us</h2>
+            <p>We are The Technalochemy team participating in the Google Solution Challenge Hackathon, dedicated to developing environmentally friendly solutions. Our mission is to promote sustainability and reduce our environmental impact through innovative technology solutions.</p>
+            <p>Located in the heart of the city, our designated location is easily accessible by public transportation and provides a collaborative environment for our team to work on our project. We welcome collaboration and feedback from the community as we strive to make a positive impact.</p>
+            <p>Feel free to visit us or contact us for more information. We look forward to serving you!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center mb-4">Our Team</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Team member cards go here -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="team_member1.jpg" class="card-img-top" alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="team_member1.jpg" class="card-img-top" alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="team_member1.jpg" class="card-img-top" alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">CEO</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more team member cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light d-flex align-items-center py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <p class="mb-0">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+          <p class="mb-0">New to Bootstrap? <a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.</p>
+        </div>
+        <div class="col-md-2">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
