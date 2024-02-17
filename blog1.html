@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: jost, sans-serif;
+    }
+    nav {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #name {
+      font-weight:bold;
+      font-size: 1.3rem;
+      margin-top: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white" id="top">
+      <div class="container xs-ms-6 lg-mx-auto">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.jpg" alt="logo" width="77" height="77">
+        </a>
+        <span class="navbar-text me-2">
+          <p id="name">EthanolXpress</p>
+        </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="#map">Location</a>
+            <a class="nav-link me-3" href="#aboutus">About Us</a>
+            <button type="button" class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Blog Content -->
+  <section class="container py-5 vh-100">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h2 class="text-center mb-4">Bioethanol Production</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Bioethanol Production: A Renewable Fuel Solution</h5>
+            <p class="card-text">Bioethanol, often derived from industrial waste, serves as an alternative fuel source. Industries can extract it from various organic materials such as sugarcane, corn, wheat, or even waste products like straw, wood chips, or algae. Through processes like fermentation, these raw materials are converted into ethanol, which can be blended with gasoline to fuel vehicles or used as a standalone fuel in ethanol-powered vehicles. This helps reduce reliance on fossil fuels and lowers carbon emissions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light d-flex align-items-center py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <p class="mb-0">For sure you can Contact Us @ <a href="mailto:bioethanol.team@gmail.com">bioethanol.team@gmail.com</a></p>
+        </div>
+        <div class="col-md-2">
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
