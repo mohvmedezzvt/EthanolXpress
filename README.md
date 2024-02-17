@@ -34,6 +34,9 @@ Contributions to EthanolXpress are welcome! If you'd like to contribute, please 
 ## Authors
 
 - Mohamed Ezzat
+- Kamel Mostafa
+- Abdelrahman Mohamed
+- Eslam Elsayed
 
 ## Contact
 
