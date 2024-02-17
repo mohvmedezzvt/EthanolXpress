@@ -54,10 +54,6 @@
       overflow: hidden;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    #member > img {
-      height: 300px;
-      object-fit: cover;
-    }
     #map {
       height: 300px;
       position: relative;
@@ -135,21 +131,67 @@
     <div class="container">
       <h2 id="ourblog" class="text-center py-5 display-4">Our Blog</h2>
       <div class="row">
-        {% for blog in blogs %}
+        
         <div class="col-md-4 mb-5">
           <div class="card">
             <div class="card-img-top bg-dark bg-opacity-10">
               <!-- Adjusting the image source based on blog content -->
-              <img src="static/images/slide_{{ blog['id'] }}.jpeg" class="w-100" alt="Card Image">
+              <img src="static/images/slide_1.jpeg" class="w-100" alt="Card Image">
             </div>
             <div class="card-body">
-              <h5 class="card-title">{{ blog['title'] }}</h5>
+              <h5 class="card-title">Ethanol for saving energy and protecting the environment</h5>
+              <p class="card-text">The expected decline in energy resources has led many countries to seek alternative fuel sources and find solutions to overcome the anticipated scarcity of fossil fuels, making biofuels a potentially optimal alternative. Bioethanol, or biologically-derived ethanol, is a type of ethanol extracted from natural or biological sources and is used as an energy source, particularly as a fuel for automobiles. Currently, it is considered one of the most important recent discoveries in the field of alternative energies, aimed at reducing the amount of toxic gases emitted from vehicles, which are harmful to the ozone layer and our planet in general.</p>
               <!-- Useing url_for to generate the correct URL for each blog -->
-              <a href="{{ url_for('blog', blog_id=blog['id']) }}" class="btn btn-primary">Read More</a>
+              <a href="/blog?blog_id=1" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>
-        {% endfor %}
+        
+        <div class="col-md-4 mb-5">
+          <div class="card">
+            <div class="card-img-top bg-dark bg-opacity-10">
+              <!-- Adjusting the image source based on blog content -->
+              <img src="static/images/slide_2.jpeg" class="w-100" alt="Card Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">The Conventional Ethanol Extraction Process (Fermentation and Distillation)</h5>
+              <p class="card-text">There is a traditional method for extracting ethanol from food using a process called fermentation, converting the sugars present in grains or sugar into ethanol and carbon dioxide by yeast. Fermentation involves adding yeast to a solution of grains or juice containing sugars, then letting the mixture sit for a few days at a specific temperature and under suitable conditions for fermentation. Afterwards, ethanol can be separated from the liquid through distillation, where the liquid is heated, ethanol vaporizes, and then it&#39;s condensed to obtain pure ethanol. However, this method is very costly because cultivating crops for bioethanol production involves intensive energy use and requires vast expanses of agricultural land, along with extremely large amounts of water and fertilizers. It also relies on the fact that using corn and sugarcane for bioethanol production leads to higher food prices.</p>
+              <!-- Useing url_for to generate the correct URL for each blog -->
+              <a href="/blog?blog_id=2" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-5">
+          <div class="card">
+            <div class="card-img-top bg-dark bg-opacity-10">
+              <!-- Adjusting the image source based on blog content -->
+              <img src="static/images/slide_3.jpeg" class="w-100" alt="Card Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Various Methods for Ethanol Production</h5>
+              <p class="card-text">But there is another, less expensive way Ethanol can be obtained from factory waste such Organic Waste Treatment: Factory waste or organic waste such as straw, fruit and vegetable peels, and agricultural waste can be used to produce ethanol through the process of biological fermentation. Waste to Energy Conversion: Thermal or biological decomposition techniques can be used to convert organic waste into secondary gases containing ethanol, which are then extracted and purified for use as fuel. Liquid Waste Treatment: Waste from food or beverage factories can be used to produce ethanol, such as beer or juice waste, through fermentation processes. Chemical Analysis Techniques: Green chemistry techniques can be used to convert some organic materials found in factory waste into ethanol. These are some of the methods that can be used to utilize factory waste for ethanol production. There are more techniques and technologies available, and you can consult experts in this field for further information and guidance.</p>
+              <!-- Useing url_for to generate the correct URL for each blog -->
+              <a href="/blog?blog_id=3" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-5">
+          <div class="card">
+            <div class="card-img-top bg-dark bg-opacity-10">
+              <!-- Adjusting the image source based on blog content -->
+              <img src="static/images/slide_4.jpeg" class="w-100" alt="Card Image">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Versatile  Fuel and Environmentally</h5>
+              <p class="card-text">Ethanol is widely used in the energy sector as a substitute for gasoline in several applications, including: 1. Fuel for Flex-Fuel Vehicles: Ethanol can be blended with gasoline to produce a fuel called E85, which can be used in vehicles designed to tolerate it. 2. Alternative Fuel to Gasoline: Ethanol is used as a substitute for gasoline in varying proportions in fuel used for cars, agricultural equipment, and even aircraft. 3. Renewable Energy: Ethanol derived from renewable sources such as sugar, starch, and plant fibers can be used as a renewable fuel. 4. Clean Fuel: Ethanol combustion produces fewer harmful emissions compared to gasoline, making it a more environmentally friendly option. 5. Electricity Generation: Ethanol can be used in generating electricity through thermal power stations that rely on combustion. 6. Production of Other Liquid Fuels: Ethanol can be converted into other liquid fuels such as methanol or diesel through specific chemical processes.</p>
+              <!-- Useing url_for to generate the correct URL for each blog -->
+              <a href="/blog?blog_id=4" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        
         
     </div>
   </section>
@@ -184,9 +226,7 @@
         <!-- Team member cards go here -->
         <div class="col-md-3 mb-4">
           <div class="card">
-            <div class="card-img-top bg-dark bg-opacity-10">
-              <img src="static/images/kamel.jpeg" class="card-img-top" alt="Team Member 1">
-            </div>
+            <img src="team_member1.jpg" class="card-img-top" alt="Team Member 1">
             <div class="card-body">
               <h5 class="card-title">Kamel Moustafa</h5>
               <p class="card-text">Leader</p>
@@ -195,9 +235,7 @@
         </div>
         <div class="col-md-3 mb-4">
           <div class="card">
-            <div class="card-img-top bg-dark bg-opacity-10">
-              <img src="static/images/mohamed.jpeg" class="card-img-top" alt="Team Member 1">
-            </div>
+            <img src="team_member1.jpg" class="card-img-top" alt="Team Member 1">
             <div class="card-body">
               <h5 class="card-title">Mohamed Ezzat</h5>
               <p class="card-text">Software Engineer</p>
@@ -206,9 +244,7 @@
         </div>
         <div class="col-md-3 mb-4">
           <div class="card">
-            <div class="card-img-top bg-dark bg-opacity-10">
-              <img src="static/images/abdo.jpeg" class="card-img-top" alt="Team Member 1">
-            </div>
+            <img src="team_member1.jpg" class="card-img-top" alt="Team Member 1">
             <div class="card-body">
               <h5 class="card-title">Adelrahman Mohamed</h5>
               <p class="card-text">Graphic Design</p>
@@ -216,10 +252,8 @@
           </div>
         </div>
         <div class="col-md-3 mb-4">
-          <div class="card" id="member">
-            <div class="card-img-top bg-dark bg-opacity-10">
-              <img src="static/images/eslam.jpeg" class="card-img-top" alt="Team Member 1">
-            </div>
+          <div class="card">
+            <img src="team_member1.jpg" class="card-img-top" alt="Team Member 1">
             <div class="card-body">
               <h5 class="card-title">Eslam Elsayed</h5>
               <p class="card-text">Technologist</p>
